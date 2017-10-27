@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 @XmlRootElement(name = "color")
-@XmlType(propOrder = { "red", "green", "blue"})
+@XmlType(propOrder = {"red", "green", "blue"})
 public class Color {
 
     private int red;
@@ -17,7 +17,7 @@ public class Color {
         return red;
     }
 
-    @XmlElement(name="red")
+    @XmlElement(name = "red")
     public void setRed(int red) {
         this.red = red;
     }
@@ -26,7 +26,7 @@ public class Color {
         return green;
     }
 
-    @XmlElement(name="green")
+    @XmlElement(name = "green")
     public void setGreen(int green) {
         this.green = green;
     }
@@ -35,8 +35,28 @@ public class Color {
         return blue;
     }
 
-    @XmlElement(name="blue")
+    @XmlElement(name = "blue")
     public void setBlue(int blue) {
         this.blue = blue;
+    }
+
+    public double getRedXYZ() {
+        return red / 255.0;
+    }
+
+    public double getGreenXYZ() {
+        return green / 255.0;
+    }
+
+    public double getBlueXYZ() {
+        return blue / 255.0;
+    }
+
+    public String getHex() {
+        String hex = "#";
+        hex += Integer.toHexString(red);
+        hex += Integer.toHexString(green);
+        hex += Integer.toHexString(blue);
+        return hex;
     }
 }

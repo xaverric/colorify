@@ -18,7 +18,7 @@ public class Colorify {
         init();
     }
 
-    private void init(){
+    private void init() {
         try {
             Marshaller<ColorPalettes> m = new Marshaller();
             this.colorPalettes = m.unmarshal(ColorPalettes.class, FILE_PATH);
@@ -27,8 +27,8 @@ public class Colorify {
         }
     }
 
-    public Palette getPalette(){
-        PaletteGenerator<Palette> generator = new PaletteGenerator<Palette>();
+    public Palette getPalette() {
+        PaletteGenerator<Palette> generator = new PaletteGenerator<>();
         return generator.getRandom(colorPalettes.getPaletteList());
     }
 }
