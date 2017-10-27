@@ -54,9 +54,9 @@ public class Color {
 
     public String getHex() {
         String hex = "#";
-        hex += Integer.toHexString(red);
-        hex += Integer.toHexString(green);
-        hex += Integer.toHexString(blue);
+        hex += String.format("%02X", red);
+        hex += String.format("%02X", green);
+        hex += String.format("%02X", blue);
         return hex;
     }
 }
