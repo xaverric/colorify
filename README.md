@@ -1,7 +1,7 @@
 # Colorify
-Color palette generator
+Color palette colorify.generator
 
-* Simple color palette generator
+* Simple color palette colorify.generator
 * Returns colors in RGB integer values
 
 ## Usage

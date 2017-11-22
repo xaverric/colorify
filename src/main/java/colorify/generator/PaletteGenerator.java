@@ -1,4 +1,4 @@
-package generator;
+package colorify.generator;
 
 import java.util.Collections;
 import java.util.List;

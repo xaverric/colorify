@@ -1,4 +1,4 @@
-package xml.element;
+package colorify.element;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

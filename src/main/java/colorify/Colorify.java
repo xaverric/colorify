@@ -1,9 +1,9 @@
-package core;
+package colorify;
 
-import generator.PaletteGenerator;
-import xml.element.ColorPalettes;
-import xml.element.Palette;
-import xml.marshaller.Marshaller;
+import colorify.generator.PaletteGenerator;
+import colorify.element.ColorPalettes;
+import colorify.element.Palette;
+import colorify.marshaller.Marshaller;
 
 import javax.xml.bind.JAXBException;
 import java.net.URISyntaxException;

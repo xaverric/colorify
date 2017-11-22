@@ -1,4 +1,4 @@
-package xml.element;
+package colorify.element;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -11,7 +11,6 @@ public class Color {
     private int red;
     private int green;
     private int blue;
-
 
     public int getRed() {
         return red;
@@ -58,5 +57,13 @@ public class Color {
         hex += String.format("%02X", green);
         hex += String.format("%02X", blue);
         return hex;
+    }
+
+    public java.awt.Color getAwtColor(){
+        return new java.awt.Color(red, green, blue);
+    }
+
+    public javafx.scene.paint.Color getFXColor(){
+        return new javafx.scene.paint.Color(red, green,blue,1);
     }
 }

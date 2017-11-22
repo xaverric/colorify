@@ -1,4 +1,4 @@
-package xml.marshaller;
+package colorify.marshaller;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;

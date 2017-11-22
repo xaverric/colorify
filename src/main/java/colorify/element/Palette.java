@@ -1,4 +1,4 @@
-package xml.element;
+package colorify.element;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -11,13 +11,13 @@ import java.util.List;
 public class Palette {
 
     @XmlElement(name = "color")
-    private List<Color> palette;
+    private List<Color> colors;
 
-    public List<Color> getPalette() {
-        return palette;
+    public List<Color> getColors() {
+        return colors;
     }
 
-    public void setPalette(List<Color> palette) {
-        this.palette = palette;
+    public void setColors(List<Color> palette) {
+        this.colors = palette;
     }
 }
