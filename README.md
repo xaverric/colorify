@@ -1,18 +1,33 @@
 # Colorify
 Color palette colorify.generator
 
-* Simple color palette colorify.generator
-* Returns colors in RGB integer values
+* Simple color palette generator
 
 ## Usage
 ```
 Colorify colorify = new Colorify();
 Palette palette = colorify.getPalette();
 
-for (Color color : palette.getPalette()){
+for (Color color : palette.getColors()){
+  
+  //returns each color component in range 0-255
   color.getRed();
   color.getGreen();
   color.getBlue();
+  
+  //returns each color component in rande 0-1
+  color.getRedXYZ();
+  color.getGreenXYZ();
+  color.getBlueXYZ();
+  
+  //returns color in hexadecimal format
+  color.getHex();
+  
+  //returns color supported by java.awt library
+  color.getAwtColor();
+  
+  //returns color supported by javafx.scene.paint library
+  color.getFXColor();
 }
 
 ```
