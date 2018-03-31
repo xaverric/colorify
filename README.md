@@ -1,7 +1,5 @@
 # Colorify
-Color palette colorify.generator
-
-* Simple color palette generator
+Simple color palette generator
 
 ## Usage
 ```
